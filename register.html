@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CMS - Register</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/pages.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body class="page-shell auth-page">
+  <div id="header"></div>
+
+  <section class="container auth-layout">
+    <div class="auth-left reveal">
+      <h1>Create<br><span class="gradient-word">Your Account</span></h1>
+      <h2>Start Managing Your Institution Smarter</h2>
+      <p>
+        Register your account to access modules, analytics, student records,
+        communication tools, and administrative workflows.
+      </p>
+      <div class="auth-accent"></div>
+    </div>
+
+    <div class="card auth-card reveal">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <label class="input-label" for="registerName">Full Name</label>
+        <div class="auth-input-wrap">
+          <span class="left-icon">👤</span>
+          <input id="registerName" class="auth-input" type="text" placeholder="Enter full name" required>
+        </div>
+
+        <label class="input-label" for="registerEmail">Email Address</label>
+        <div class="auth-input-wrap">
+          <span class="left-icon">✉</span>
+          <input id="registerEmail" class="auth-input" type="email" placeholder="name@college.com" required>
+        </div>
+
+        <label class="input-label" for="registerPhone">Phone Number</label>
+        <div class="auth-input-wrap">
+          <span class="left-icon">📞</span>
+          <input id="registerPhone" class="auth-input" type="text" placeholder="+91 98765 43210" required>
+        </div>
+
+        <label class="input-label" for="registerPassword">Password</label>
+        <div class="auth-input-wrap">
+          <span class="left-icon">🔒</span>
+          <input id="registerPassword" class="auth-input" type="password" placeholder="Create password" required>
+          <button class="right-icon auth-toggle" id="registerPasswordToggle" type="button" aria-label="Show password">👁</button>
+        </div>
+
+        <div class="auth-row">
+          <label><input id="registerAgree" type="checkbox" required> I agree to terms</label>
+          <a href="./login.html">Already have an account?</a>
+        </div>
+
+        <p id="registerMessage" class="auth-message" aria-live="polite"></p>
+        <button class="btn-solid auth-submit pulse-loop" type="submit">Create Account</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="./js/include.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/register.js"></script>
+</body>
+</html>

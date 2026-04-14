@@ -1,0 +1,556 @@
+@media (max-width: 1200px) {
+  .grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .grid-4,
+  .grid-3,
+  .blog-page-grid,
+  .modules-page-grid,
+  .contact-cards,
+  .promo-grid,
+  .journey-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid,
+  .story-grid,
+  .auth-layout,
+  .faq-grid,
+  .contact-main-grid,
+  .experience-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-band {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1,
+  .page-hero h1,
+  .auth-left h1 {
+    font-size: 48px;
+  }
+
+  .timeline {
+    padding-left: 42px;
+  }
+
+  .timeline-dot {
+    left: -42px;
+  }
+
+  .section-title,
+  .story-copy h2,
+  .form-panel h2,
+  .contact-info-panel h2,
+  .modules-cta h2,
+  .team-title,
+  .timeline-title {
+    font-size: 32px;
+  }
+
+  .metric-number {
+    font-size: 30px;
+  }
+
+  .metric-label,
+  .section-subtitle,
+  .page-hero p,
+  .story-copy p,
+  .cta-center p,
+  .modules-cta p,
+  .auth-left p,
+  .footer-col p,
+  .footer-col li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-login {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    background: rgba(7, 27, 60, 0.98);
+    padding: 18px 3%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .grid-4,
+  .grid-3,
+  .grid-5,
+  .blog-page-grid,
+  .modules-page-grid,
+  .contact-cards,
+  .footer-grid,
+  .promo-grid,
+  .journey-grid,
+  .metrics-band,
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-header-row,
+  .footer-bottom,
+  .stats-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    min-height: 72vh;
+  }
+
+  .hero-content h1,
+  .page-hero h1,
+  .auth-left h1 {
+    font-size: 38px;
+  }
+
+  .hero-content p,
+  .btn-solid,
+  .btn-outline,
+  .chat-message,
+  .chat-input,
+  .chat-send,
+  .auth-input,
+  .input,
+  .textarea {
+    font-size: 16px;
+  }
+
+  .section-title,
+  .story-copy h2,
+  .form-panel h2,
+  .contact-info-panel h2,
+  .modules-cta h2,
+  .team-title,
+  .timeline-title {
+    font-size: 30px;
+  }
+
+  .info-card h3,
+  .module-card h3,
+  .feature-card h3,
+  .testimonial-card h3,
+  .blog-body h3,
+  .value-card h4,
+  .timeline-card h3,
+  .contact-mini h3,
+  .modules-page-card h3,
+  .experience-point h3,
+  .journey-card h3,
+  .promo-card h3 {
+    font-size: 20px;
+  }
+
+  .metric-number {
+    font-size: 28px;
+  }
+
+  .metric-label {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .page-hero {
+    padding: 56px 0 30px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-panel,
+  .contact-info-panel,
+  .auth-card {
+    padding: 28px 18px;
+  }
+
+  .dashboard-panel-lg {
+    grid-column: span 1;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline {
+    padding-left: 34px;
+  }
+
+  .timeline-dot {
+    left: -34px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Responsive slider */
+@media (max-width: 768px) {
+  .slider-track,
+  .hero-slider {
+    height: auto;
+    min-height: 76vh;
+  }
+
+  .slide {
+    min-height: 76vh;
+    padding: 100px 0 60px;
+  }
+
+  .slider-dots {
+    bottom: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .chat-widget {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    align-items: stretch;
+  }
+
+  .chat-window {
+    width: 100%;
+    min-height: 430px;
+  }
+
+  .chat-header strong {
+    font-size: 24px;
+  }
+
+  .chat-body {
+    height: 280px;
+  }
+
+  .chat-form {
+    gap: 8px;
+  }
+
+  .chat-send {
+    padding-inline: 16px;
+  }
+
+  .chat-toggle {
+    align-self: flex-end;
+    width: 58px;
+    height: 58px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section-title,
+  .story-copy h2,
+  .form-panel h2,
+  .contact-info-panel h2,
+  .modules-cta h2,
+  .team-title,
+  .timeline-title {
+    font-size: 27px;
+  }
+
+  .section-subtitle,
+  .page-hero p,
+  .story-copy p,
+  .cta-center p,
+  .modules-cta p,
+  .auth-left p,
+  .footer-col p,
+  .footer-col li a,
+  .info-card p,
+  .module-card p,
+  .feature-card p,
+  .testimonial-card p,
+  .experience-point p,
+  .journey-card p,
+  .promo-card p,
+  .dashboard-panel p,
+  .dashboard-feed li,
+  .faq-answer,
+  .facts-box li,
+  .contact-mini p,
+  .quick-item p,
+  .modules-page-card p {
+    font-size: 15px;
+  }
+
+  .info-card h3,
+  .module-card h3,
+  .feature-card h3,
+  .testimonial-card h3,
+  .blog-body h3,
+  .value-card h4,
+  .timeline-card h3,
+  .contact-mini h3,
+  .modules-page-card h3,
+  .experience-point h3,
+  .journey-card h3,
+  .promo-card h3 {
+    font-size: 19px;
+  }
+
+  .metric-number {
+    font-size: 26px;
+  }
+
+  .metric-label {
+    font-size: 15px;
+  }
+}
+
+/* HOME PAGE POLISH */
+.home-page .hero-slider .slide {
+  text-align: left;
+}
+
+.home-page .hero-slider .slide .container {
+  justify-content: flex-start;
+}
+
+.home-page .hero-slider .hero-content {
+  max-width: 720px;
+  margin: 0;
+  text-align: left;
+}
+
+.home-page .hero-slider .hero-content h1 {
+  font-size: clamp(44px, 5vw, 64px);
+  margin-bottom: 16px;
+}
+
+.home-page .hero-slider .hero-content p {
+  max-width: 600px;
+  margin: 0 0 26px;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.home-page .hero-slider .page-tag {
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.home-page .hero-slider .hero-buttons {
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.home-page .section-title {
+  font-size: 30px;
+}
+
+.home-page .section-subtitle {
+  font-size: 15px;
+}
+
+.home-page .experience-shell {
+  align-items: start;
+}
+
+.home-page .metric-item {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.home-page .metric-item strong {
+  font-size: 31px;
+}
+
+.home-page .metric-label {
+  font-size: 15px;
+}
+
+.home-page .info-card,
+.home-page .module-card,
+.home-page .testimonial-card,
+.home-page .experience-point,
+.home-page .journey-card,
+.home-page .promo-card,
+.home-page .blog-card,
+.home-page .facts-box {
+  text-align: left;
+}
+
+.home-page .info-card h3,
+.home-page .module-card h3,
+.home-page .experience-point h3,
+.home-page .journey-card h3,
+.home-page .promo-card h3,
+.home-page .blog-body h3 {
+  font-size: 20px;
+}
+
+.home-page .feature-card h3 {
+  font-size: 18px;
+}
+
+.home-page .testimonial-card h3,
+.home-page .faq-question {
+  font-size: 16px;
+}
+
+.home-page .info-card p,
+.home-page .module-card p,
+.home-page .feature-card p,
+.home-page .testimonial-card p,
+.home-page .experience-point p,
+.home-page .journey-card p,
+.home-page .promo-card p,
+.home-page .dashboard-panel p,
+.home-page .dashboard-feed li,
+.home-page .blog-body p,
+.home-page .blog-meta,
+.home-page .blog-header-row .left p,
+.home-page .faq-answer,
+.home-page .facts-box li {
+  font-size: 15px;
+}
+
+.home-page .feature-card .icon-chip {
+  margin-inline: auto;
+}
+
+.home-page .blog-header-row .left {
+  max-width: 620px;
+}
+
+.home-page .blog-header-row h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .home-page .hero-slider .slide {
+    text-align: center;
+  }
+
+  .home-page .hero-slider .slide .container {
+    justify-content: center;
+  }
+
+  .home-page .hero-slider .hero-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .home-page .hero-slider .hero-content h1 {
+    font-size: clamp(34px, 8vw, 46px);
+  }
+
+  .home-page .hero-slider .hero-content p {
+    max-width: 100%;
+    margin: 0 auto 24px;
+    font-size: 16px;
+  }
+
+  .home-page .hero-slider .hero-buttons {
+    justify-content: center;
+  }
+
+  .home-page .metric-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-page .blog-header-row h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page .section-title,
+  .home-page .blog-header-row h2 {
+    font-size: 26px;
+  }
+
+  .home-page .section-subtitle,
+  .home-page .blog-header-row .left p,
+  .home-page .info-card p,
+  .home-page .module-card p,
+  .home-page .feature-card p,
+  .home-page .testimonial-card p,
+  .home-page .experience-point p,
+  .home-page .journey-card p,
+  .home-page .promo-card p,
+  .home-page .dashboard-panel p,
+  .home-page .dashboard-feed li,
+  .home-page .blog-body p,
+  .home-page .blog-meta,
+  .home-page .faq-answer,
+  .home-page .facts-box li,
+  .home-page .metric-label {
+    font-size: 14px;
+  }
+
+  .home-page .hero-slider .hero-content h1 {
+    font-size: 31px;
+  }
+
+  .home-page .hero-slider .hero-content p {
+    font-size: 15px;
+  }
+
+  .home-page .hero-slider .page-tag {
+    font-size: 10px;
+  }
+
+  .home-page .info-card h3,
+  .home-page .module-card h3,
+  .home-page .feature-card h3,
+  .home-page .experience-point h3,
+  .home-page .journey-card h3,
+  .home-page .promo-card h3,
+  .home-page .blog-body h3 {
+    font-size: 18px;
+  }
+
+  .home-page .testimonial-card h3 {
+    font-size: 16px;
+  }
+
+  .home-page .faq-question {
+    font-size: 15px;
+  }
+
+  .home-page .metric-item strong {
+    font-size: 27px;
+  }
+}

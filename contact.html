@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CMS - Contact</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/pages.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body class="page-shell">
+  <div id="header"></div>
+
+  <section class="page-hero page-hero-center">
+    <div class="container reveal">
+      <div class="page-tag">Support Center</div>
+      <h1>Contact Us</h1>
+      <p>
+        Reach out to learn how we can optimize your campus operations and enhance
+        educational efficiency. Our team is here to help your organization grow.
+      </p>
+
+      <div class="card contact-top-box">
+        <div class="contact-cards">
+          <div class="card contact-mini hover-lift">
+            <div class="icon-chip" style="margin-inline:auto;">📍</div>
+            <h3>Visit Us</h3>
+            <p>E-51 Phase 8 Industrial Area Mohali Punjab 160072</p>
+            <a href="https://www.google.com/maps?q=E-51+Phase+8+Industrial+Area+Mohali+Punjab+160072" target="_blank" rel="noopener noreferrer">View Map</a>
+          </div>
+
+          <div class="card contact-mini hover-lift">
+            <div class="icon-chip" style="margin-inline:auto;">📞</div>
+            <h3>Call Us</h3>
+            <p>+91 9876543210 / +91 9876543211</p>
+            <a href="tel:+919876543210">Call Now</a>
+          </div>
+
+          <div class="card contact-mini hover-lift">
+            <div class="icon-chip" style="margin-inline:auto;">✉️</div>
+            <h3>Email Us</h3>
+            <p>info@academia.edu</p>
+            <a href="mailto:info@academia.edu">Send Email</a>
+          </div>
+
+          <div class="card contact-mini hover-lift">
+            <div class="icon-chip" style="margin-inline:auto;">🕒</div>
+            <h3>Office Hours</h3>
+            <p>Mon–Fri 8AM–6PM | Sat 9AM–2PM</p>
+            <a href="./support.html#onboarding">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container">
+      <div class="contact-main-grid">
+        <div class="card form-panel hover-lift">
+          <h2>Send us a Message</h2>
+          <form id="contactForm">
+            <div class="form-grid">
+              <input id="contactName" class="input" name="fullName" type="text" placeholder="Full Name" minlength="2" maxlength="80" autocomplete="name" required />
+              <input id="contactEmail" class="input" name="email" type="email" placeholder="Email Address" maxlength="120" autocomplete="email" required />
+              <input id="contactPhone" class="input" name="phoneNumber" type="tel" placeholder="Phone Number" minlength="10" maxlength="20" inputmode="tel" autocomplete="tel" required />
+              <input id="contactSubject" class="input" name="subject" type="text" placeholder="Subject" minlength="3" maxlength="120" required />
+              <textarea id="contactMessageText" class="textarea" name="message" placeholder="Your Message" minlength="10" maxlength="1000" required></textarea>
+            </div>
+            <p id="contactMessage" class="form-message" aria-live="polite"></p>
+            <button class="btn-solid submit-btn pulse-loop" type="submit">Send Message ✈</button>
+          </form>
+        </div>
+
+        <div class="card contact-info-panel hover-lift">
+          <h2>Quick Contact</h2>
+
+          <div class="quick-item">
+            <div class="icon-chip">📍</div>
+            <div>
+              <span>Visit Us</span>
+              <p>E-51 Phase 8 Industrial Area Mohali Punjab 160072</p>
+            </div>
+          </div>
+
+          <div class="quick-item">
+            <div class="icon-chip">📞</div>
+            <div>
+              <span>Call Us</span>
+              <p>+91 9876543210 / +91 9876543211</p>
+            </div>
+          </div>
+
+          <div class="quick-item">
+            <div class="icon-chip">✉️</div>
+            <div>
+              <span>Email Us</span>
+              <p>info@academia.edu</p>
+            </div>
+          </div>
+
+          <div class="quick-item">
+            <div class="icon-chip">🕒</div>
+            <div>
+              <span>Office Hours</span>
+              <p>Mon–Fri 8AM–6PM | Sat 9AM–2PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <iframe
+    class="map-frame"
+    src="https://www.google.com/maps?q=Phase+8+Industrial+Area+Mohali+Punjab&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <div id="footer"></div>
+
+  <script src="./js/include.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/contact.js"></script>
+</body>
+</html>
