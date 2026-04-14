@@ -1,7 +1,5 @@
 const LIVE_SUPPORT_CONFIG = {
-  endpoint: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
-  // Temporary browser-side setup based on the key you shared. Move this behind a server proxy before production.
-  apiKey: "AIzaSyDpptkF1ULWNNIOnCgJkzbW0m4nLEZqIh4",
+  endpoint: "/api/live-support",
   generationConfig: {
     temperature: 0.6,
     maxOutputTokens: 220
@@ -277,15 +275,14 @@ function initChatWidget() {
   }
 
   async function fetchSupportReply(message) {
-    if (!LIVE_SUPPORT_CONFIG.apiKey) {
+    if (!LIVE_SUPPORT_CONFIG.endpoint) {
       return getFallbackReply(message);
     }
 
     const response = await fetch(LIVE_SUPPORT_CONFIG.endpoint, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "x-goog-api-key": LIVE_SUPPORT_CONFIG.apiKey
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(buildSupportRequest(message))
     });
